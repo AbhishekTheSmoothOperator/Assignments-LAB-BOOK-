@@ -1,0 +1,30 @@
+package com.cg.jh02.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employees3")
+public class Employee implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="emp_id")
+	private Long empId;
+	@Column(name="first_name",length=15)
+	private String firstName;
+	@Column(name="last_name",length=15)
+	private String lastName;
+}

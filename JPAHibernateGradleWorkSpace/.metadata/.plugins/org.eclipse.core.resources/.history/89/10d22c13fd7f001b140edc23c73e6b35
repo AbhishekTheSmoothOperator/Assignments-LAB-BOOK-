@@ -1,0 +1,36 @@
+package com.cg.jh03.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employees04")
+public class Employee {
+	@Id
+	@Column(name="emp_Id")
+	private long emp_id ;
+	
+	@Column(name="first_name")
+	private String firstName;
+	
+	@Column(name="last_name")
+	private String lastName;
+	
+	private String fullName=firstName+lastName;
+	
+	@Column(name="address")
+	private String address;
+	
+	@Column(name="salary_account")
+	private String salaryAccountType;        //current   or    saving 
+	
+	
+	
+	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

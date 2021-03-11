@@ -1,0 +1,9 @@
+package com.cg.jh05.entity;
+
+public class Departments {
+
+	public Departments() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

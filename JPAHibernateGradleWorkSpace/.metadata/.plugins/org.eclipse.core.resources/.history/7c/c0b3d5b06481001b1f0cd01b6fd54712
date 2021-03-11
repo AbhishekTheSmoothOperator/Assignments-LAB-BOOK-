@@ -1,0 +1,31 @@
+package com.cg.jh03.ui;
+
+import java.util.Scanner;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import com.cg.jh03.entity.Course;
+import com.cg.jh03.util.JPAUtil;
+
+public class Delete {
+	
+	public static void main(String[]args) {
+		EntityManager em = JPAUtil.getEntityManager();
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter product id: ");
+		Long courseId=sc.nextLong();
+		Course p=em.find(Course.class, courseId);
+		if(p==null) {
+			System.out.println("product with id #"+courseId+"not found!");
+		}else {
+			EntityTransaction txn = em.getTransaction();
+			txn.begin();
+			em.remove(p);
+			txn.commit();
+
+		}
+		sc.close();
+		em.close();
+	}
+}

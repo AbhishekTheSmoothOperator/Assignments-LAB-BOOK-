@@ -1,0 +1,26 @@
+package com.cg.jpa06.ui;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import com.cg.jpa.util.JPAUtil;
+import com.cg.jpa06.entity.Course;
+
+public class App3 {
+
+	public static void main(String[] args) {
+		EntityManager em = JPAUtil.getEntityManager();
+		Course course = em.find(Course.class, 2L);
+		if(course !=null) {
+			EntityTransaction txn = em.getTransaction();
+			txn.begin();
+			em.remove(course);
+			txn.commit();
+		}else {
+			System.out.println("No such course available");
+		}
+		JPAUtil.shutdown();
+
+	}
+
+}

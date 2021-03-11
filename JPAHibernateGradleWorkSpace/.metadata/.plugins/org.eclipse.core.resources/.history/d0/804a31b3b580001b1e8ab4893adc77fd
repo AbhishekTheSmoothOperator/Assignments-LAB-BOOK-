@@ -1,0 +1,12 @@
+package com.cg.jh05.ui;
+
+import javax.persistence.EntityManager;
+
+import com.cg.jh05.entity.Employee;
+
+public class App1 {
+	public static void main(String []args) {
+		EntityManager em=new JPAUtil.getEntityManager();
+		Employee e1=new Employee(101L,"abhi","shek",4000.0,10);
+	}
+}

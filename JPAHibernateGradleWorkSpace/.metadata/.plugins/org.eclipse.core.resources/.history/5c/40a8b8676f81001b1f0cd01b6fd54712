@@ -1,0 +1,15 @@
+package com.cg.jh04.ui;
+
+import javax.persistence.EntityManager;
+
+import com.cg.util.JPAUtil;
+
+public class App1 {
+
+	public static void main(String[] args) {
+		
+		EntityManager em=JPAUtil.getEntityManager();
+
+	}
+
+}

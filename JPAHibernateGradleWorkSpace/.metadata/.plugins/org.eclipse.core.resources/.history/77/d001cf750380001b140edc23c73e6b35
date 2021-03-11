@@ -1,0 +1,15 @@
+package com.cg.jh03.ui;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import com.cg.jh03.entity.Employee;
+import com.cg.jh03.model.Account;
+import com.cg.jh03.util.JPAUtil;
+
+public class Insert {
+
+	EntityManager em = JPAUtil.getEntityManager();
+	Account lap1= new Account(101010376L,"state bank of india","chennai",15000.50);
+
+}

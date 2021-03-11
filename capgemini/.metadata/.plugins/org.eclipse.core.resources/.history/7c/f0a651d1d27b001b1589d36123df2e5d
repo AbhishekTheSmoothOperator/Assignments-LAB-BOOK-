@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Hello {
+
+	public static void main(String[] args) {
+		System.out.println("hiiiii");
+		Map<String, Integer> hm = new TreeMap<>();
+		hm.put("srinivas",101);
+		hm.put("navya",102);
+		hm.put("sravya",105);
+		hm.put("ravi",103);
+		hm.put("radha",104);
+		hm.put("ramesh",101);
+		
+		for(String key : hm.keySet()) {
+			System.out.println(key + " : " + hm.get(key));
+		}
+		
+		for(Integer value : hm.values()) {
+			System.out.println(value);
+		}
+		
+		System.out.println("------------------------------------");
+	
+	
+	
+	}
+
+}

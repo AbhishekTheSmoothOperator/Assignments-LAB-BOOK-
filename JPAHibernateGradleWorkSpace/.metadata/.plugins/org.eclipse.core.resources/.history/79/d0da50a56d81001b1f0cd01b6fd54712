@@ -1,0 +1,9 @@
+package com.cg.jh04.entity;
+
+public class Contract {
+
+	public Contract() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

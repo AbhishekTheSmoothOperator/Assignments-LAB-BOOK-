@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		//System.out.println("hiiiii");
+
+	List<String>i=null;
+try {	i.add("banglore");
+	i.add("mumbai");
+	i.add("csk");
+}catch(ArrayIndexOutOfBoundsException ex) {
+	i.clear();
+}catch(Exception ex) {
+	i.clear();
+}
+System.out.println(i.get(2));
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

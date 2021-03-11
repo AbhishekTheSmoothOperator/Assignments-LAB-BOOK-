@@ -1,0 +1,32 @@
+public class Hello {
+
+	public static void main(String[] args) {
+		//System.out.println("hiiiii");
+
+	try {
+		new Hello().m1();
+	}catch(Exception e) {
+		System.out.println(e.getMessage());
+	}
+	}
+	public void m1()throws Exception{
+		try {
+			System.out.println("m1");
+		}catch(Exception e) {
+			((Object) e).setMessage("new error message");
+			throw e;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

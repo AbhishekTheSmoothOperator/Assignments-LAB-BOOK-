@@ -1,0 +1,81 @@
+package com.cg.jh03.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="accounts")
+public class Account{
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="account_number")
+	private long accountNumber;
+	
+	@Column(name="bank_name")
+	private String bankName;
+	
+	@Column(name="branch_name")
+	private String branchName;
+	
+	@Column(name="balance")
+	private double balance;
+	
+	public Account() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Account(long accountNumber, String bankName, String branchName, double balance) {
+		super();
+		this.accountNumber = accountNumber;
+		this.bankName = bankName;
+		this.branchName = branchName;
+		this.balance = balance;
+	}
+
+	public long getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(long accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public String getBankName() {
+		return bankName;
+	}
+
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+
+	public String getBranchName() {
+		return branchName;
+	}
+
+	public void setBranchName(String branchName) {
+		this.branchName = branchName;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("accountNumber=%d, bankName=%s, branchName=%s, balance=%s", accountNumber,
+				bankName, branchName, balance);
+	}
+	
+	
+	
+
+}

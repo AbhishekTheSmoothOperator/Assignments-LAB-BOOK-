@@ -1,0 +1,13 @@
+package com.cg.ixd.ui;
+
+import com.cg.ixd.service.GreetServiceImpl;
+import com.cg.ixd.service.IGreetService;
+
+public class App1 {
+
+	public static void main(String[] args) {
+		IGreetService gs1=new GreetServiceImpl();
+		System.out.println(gs1.getGreeting("Srinivas"));
+	}
+
+}

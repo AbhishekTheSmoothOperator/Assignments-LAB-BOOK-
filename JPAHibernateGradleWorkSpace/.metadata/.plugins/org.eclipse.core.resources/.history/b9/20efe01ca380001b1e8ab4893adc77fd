@@ -1,0 +1,25 @@
+package com.cg.jh02.ui;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import com.cg.jh02.entity.Order;
+import com.cg.jh02.entity.Student;
+import com.cg.jh02.util.JPAUtil;
+
+public class App05 {
+	public static void main(String []args) {
+		EntityManager em = JPAUtil.getEntityManager();
+		
+				
+		EntityTransaction txn = em.getTransaction();
+		txn.begin();
+		//em.persist();
+		txn.commit();
+		JPAUtil.shutdown();
+		
+	}
+}

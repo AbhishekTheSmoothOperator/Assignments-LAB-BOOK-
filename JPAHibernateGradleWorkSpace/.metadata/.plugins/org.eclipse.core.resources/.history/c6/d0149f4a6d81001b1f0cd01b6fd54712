@@ -1,0 +1,9 @@
+package com.cg.jh04.entity;
+
+public class Manager {
+
+	public Manager() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
