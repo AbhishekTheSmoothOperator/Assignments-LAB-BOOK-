@@ -1,7 +1,0 @@
-package com.cg.ixd.service;
-
-public class GreetNoteProviderStandardImpl {
-	public String getGreetNote() {
-		return "Hello! Welcome";
-	}
-}

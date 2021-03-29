@@ -2,4 +2,7 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.cg.ixd.service.IGreetService"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>

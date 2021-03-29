@@ -1,9 +1,0 @@
-package com.cg.ixd.service;
-
-public class GreetServiceArgumentedImpl {
-
-	public GreetServiceArgumentedImpl() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
